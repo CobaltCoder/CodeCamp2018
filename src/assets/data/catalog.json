@@ -1,0 +1,60 @@
+{
+    "CatalogItems": [
+        {
+            "id": "1",
+            "name": "Ammonia",
+            "desc": "Ammonia with bleach, a winning combination",
+            "featured": "0",
+            "image": "assets/images/Ammonia.jpg"
+        },
+        {
+            "id": "2",
+            "name": "Boxes",
+            "desc": "Various boxes, for shipping stuff",
+            "featured": "1",
+            "image": "assets/images/boxes.jpg"
+        },
+        {
+            "id": "3",
+            "name": "Cereals",
+            "desc": "A balanced part of a nutitious breakfast",
+            "featured": "0",
+            "image": "assets/images/cereals.jpg"
+        },
+        {
+            "id": "4",
+            "name": "Cheeses",
+            "desc": "A balanced part of a nutritious lunch",
+            "featured": "0",
+            "image": "assets/images/cheeses.jpg"
+        },
+        {
+            "id": "5",
+            "name": "Cleaners",
+            "desc": "Your house is filthy, clean it up with these cleaners",
+            "featured": "0",
+            "image": "assets/images/cleaners.jpg"
+        },
+        {
+            "id": "6",
+            "name": "Fruits and Nuts",
+            "desc": "Nuts and fruits",
+            "featured": "1",
+            "image": "assets/images/fruitsandnuts.jpg"
+        },
+        {
+            "id": "7",
+            "name": "Makeup",
+            "desc": "Be yourself by looking like someone else",
+            "featured": "1",
+            "image": "assets/images/makeup.jpg"
+        },
+        {
+            "id": "8",
+            "name": "Pencils",
+            "desc": "Draw colorful things",
+            "featured": "1",
+            "image": "assets/images/pencils.jpg"
+        }
+    ]
+}

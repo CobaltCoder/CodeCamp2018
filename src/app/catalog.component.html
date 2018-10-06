@@ -1,0 +1,55 @@
+<div class="card container mat-elevation-z8">
+    <div class="card-body">
+        <div class="row justify-content-center pageheader">
+            Please Wait
+        </div>
+        <div class="row justify-content-center pageheader">
+            <div class="col">&nbsp;</div>
+        </div>
+        <div class="row justify-content-center pageheader">
+            <span>New products in:&nbsp;</span>
+            <div countdown="10/14/2018 5:34 PM"></div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center pageheader">
+    &nbsp;</div>
+<div class="row justify-content-center pageheader">
+    <h2>Featured Items</h2>
+    <a class="badge1 badge2" uiSref="Cart" uiSrefActive="active">Cart</a>
+</div>
+<div class="row" *ngFor="let ci of catalogItems | filterByFeatured:1">
+    <div class="card container mat-elevation-z8">
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <a class="contactlink" uiSref="CatalogItemByID" [uiParams]="{ CIId: ci.id }">
+                        <img src="{{ci.image}}">
+                    </a>
+                </div>
+                <div class="col">{{ci.name}}</div>
+                <div class="col">{{ci.desc}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center pageheader">
+    &nbsp;</div>
+<div class="row justify-content-center pageheader">
+    <h2>Other Items</h2>
+</div>
+<div class="row" *ngFor="let ci of catalogItems | filterByFeatured:0">
+    <div class="card container mat-elevation-z8">
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <a class="contactlink" uiSref="CatalogItemByID" [uiParams]="{ CIId: ci.id }">
+                        <img src="{{ci.image}}">
+                    </a>
+                </div>
+                <div class="col">{{ci.name}}</div>
+                <div class="col">{{ci.desc}}</div>
+            </div>
+        </div>
+    </div>
+</div>

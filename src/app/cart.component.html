@@ -1,0 +1,51 @@
+<div class="card container">
+    <div class="card-body">
+        <div class="container-fluid">
+            <div class="row toprow">
+                <div class="pageheader pagecentered">
+                    Cart
+                </div>
+                <a class="badge1 badge2" uiSref="Catalog" uiSrefActive="active">Catalog</a>
+            </div>
+        </div>
+        <div>
+            <div class="row toprow">
+                <div class="col">
+                    <div class="card container">
+                        <div class="card-body">
+                            <div *ngIf="cartService._catalogItems">
+                                <div *ngFor="let ci of cartService._catalogItems">
+                                    <div class="row cartrow">
+                                        <div class="col">
+                                            <img src="{{ci.image}}">
+                                        </div>
+                                        <div class="col">{{ci.name}}</div>
+                                        <div class="col">{{ci.desc}}</div>
+                                        <div class="col">{{ci.price}}</div>
+                                        <div class="col">
+                                            <button md-button (click)="removeFromCart(ci)" class="contactlink">
+                                                Remove
+                                             </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="card container toprow bottomrow">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                        <button (click)="submit()" md-raised-button>
+                                <i class="fa fa-cloud-upload" aria-hidden="true"></i>&nbsp;Submit Request</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

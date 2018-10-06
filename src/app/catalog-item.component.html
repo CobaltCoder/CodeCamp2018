@@ -1,0 +1,19 @@
+<div class="row justify-content-center pageheader">
+    <h2>{{label}}</h2>&nbsp;
+    <a class="badge1 badge2" uiSref="Cart" uiSrefActive="active">Cart</a>
+</div>
+<div class="card container mat-elevation-z8">
+    <div class="card-body">
+        <div class="row">
+            <div class="col">
+                <img src="{{catalogItem.image}}">
+            </div>
+            <div class="col">{{catalogItem.name}}</div>
+            <div class="col">{{catalogItem.desc}}</div>
+            <div class="col">{{catalogItem.price}}</div>
+            <div class="col">
+                <button md-button (click)="addToCart(catalogItem)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
